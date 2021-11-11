@@ -54,6 +54,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style:none;
 }
 
@@ -65,22 +67,31 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
-    outline: 1px solid tomato;
     text-align: center;
+    outline: 1px solid tomato;
 } 
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0; 
+}
 /* ------------------- HEDER-------------------------- */
 
 .header{
     background-color:var(--header-background)
 }
 .header-logo {
-font-family: Raleway;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
 }
 .header-studio{
     color: var(--second-title-color);
@@ -123,7 +134,17 @@ color: var(--accent-color);
 
 .hero{
     background-color: var(--second-background);
+    text-align: center;
+    outline: 1px solid tomato;
 }
+
+.section-title-container{
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
+}
+
 .hero-section-title{
     font-weight: 900;
     font-size: 44px;
@@ -131,7 +152,11 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
     color:var(--main-title-color);
 }
+
 .hero-section-btn{
+    text-align: center;
+    min-width: 200px;
+    padding: 10px 32px;
     cursor: pointer;
     background-color:var(--accent-color) ;
     font-family: inherit;
@@ -140,10 +165,6 @@ color: var(--accent-color);
     line-height: 1.87;
     letter-spacing: 0.06em;
     color:var(--main-title-color);
-}
-
-.section-title-container{
-    width: 696px;
 }
     
 /* -------------------DIFFERENCES-------------------------- */
@@ -174,7 +195,7 @@ color: var(--accent-color);
     letter-spacing: 0.03em;
 }
 
-.differences-container{
+.differences{
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
