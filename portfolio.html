@@ -13,24 +13,26 @@
     </head>
     <body>
         <!--Шапка-->
-        <div class="container">
         <header class="header">
-            <nav class="header-navigation">
-                <a href="/" class="link header-logo">Web<span class="header-studio">Studio</span> </a>
-                <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link"  href="./index.html">Студия</a></li>
-                    <li class="header-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+            <div class="container heder-container">
+                <nav class="header-navigation">
+                    <a href="/" class="link header-logo">Web<span class="header-studio">Studio</span> </a>
+                    <ul class="list header-list">
+                        <li class="header-item"><a class="link header-link"  href="./index.html">Студия</a></li>
+                        <li class="header-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+                    </ul>
+                </nav>              
+                <ul class="list contact-list">
+                    <li class="contact-item"><a href="mailto:info@devstudio.com" class="link contact-link" >info@devstudio.com</a></li>
+                    <li class="contact-item"><a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>              
-            <ul class="list contact-list">
-                <li class="contact-item"><a href="mailto:info@devstudio.com" class="link contact-link" >info@devstudio.com</a></li>
-                <li class="contact-item"><a href="tel:+380961111111" class="link contact-link">+38 096 111 11 11</a></li>
-            </ul>
-        </header>   
+            </div>   
+        </header>  
         <main> 
             <!--Портфолио-->  
             <section>
+                <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
                 <div class="porfolio">
                     <ul class="list porfolio-list">
@@ -107,13 +109,13 @@
                             </a>  
                         </li>            
                     </ul>       
+                </div>
                 </div>   
             </section>    
-        </main>
-    </div>   
+        </main>   
         <!--Подвал-->
-        <footer class="footer">
-            <div class="footer-container">
+        <footer class="footer"> 
+            <div class="container">
                 <a href="/" class="link footer-logo">Web<span class="footer-studio">Studio</span> </a>
                 <address>
                     <ul class="list footer-list">
@@ -121,8 +123,8 @@
                         <li class="footer-item"><a href="mailto:info@devstudio.com" class="link footer-link">info@devstudio.com</a></li>
                         <li class="footer-item"><a href="tel:+380961111111" class="link footer-link">+38 096 111 11 11</a></li>
                     </ul>
-                </address>
-            </div>    
-        </footer> 
+                </address>  
+            </div>                          
+        </footer>
     </body>
 </html>
