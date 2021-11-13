@@ -85,7 +85,6 @@ body {
     margin-right: auto;
     padding: 0 15px;
     width: 1200px;
-
     outline: 1px solid tomato;
 } 
 
@@ -98,8 +97,6 @@ body {
 .heder-container{
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .header-navigation{
@@ -109,6 +106,8 @@ body {
 
 .header-logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
     font-family: Raleway;
     font-weight: 700;
@@ -120,6 +119,7 @@ body {
 
 .header-studio{
     color: var(--second-title-color);
+   
 }
 
 .header-list{
@@ -131,6 +131,9 @@ body {
 }
 
 .header-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -158,6 +161,9 @@ body {
 }
 
 .contact-link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -172,7 +178,7 @@ body {
 
 /* ------------------- HERO-------------------------- */
 
-.hero-section{
+.hero{
     background-color: var(--second-background);
     max-width: 1600px;
 }
@@ -182,7 +188,7 @@ body {
     padding-bottom: 200px;
 }
 
-.hero-section-title{
+.hero-title{
     width: 696px;
     height: 120px;
     margin-left: auto;
@@ -198,14 +204,15 @@ body {
     color:var(--main-title-color);
 }
 
-.hero-section-btn{
+.hero-btn{
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    text-align: center;
+    /* text-align: center;
     min-width: 200px;
-    height: 50px;
+    height: 50px; */
     padding: 10px 32px;
+    border-radius: 4px;
 
     background-color:var(--accent-color) ;
     font-weight: 700;
@@ -230,12 +237,20 @@ body {
     margin: -1px;
 }
 
+.differences-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .differences-list{
     display: flex;
     justify-content: center;
 }
 
+.differences-item:not(:last-child){
+    margin-right: 30px;}
+
 .differences-title{  
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -244,6 +259,8 @@ body {
 }
 
 .differences-after-title{
+    width: 270px;
+    height: 75px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -252,7 +269,14 @@ body {
 
 /* -------------------WORK-------------------------- */
 
+.work-container{
+    padding-bottom: 94px;
+    padding-bottom: 94px;
+}
 .work-title{
+        text-align: center;
+        margin-bottom: 50px;
+
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
@@ -271,7 +295,13 @@ body {
     background-color: var(--third-background);
 }
 
+.command-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .command-title{
+    text-align: center;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -281,7 +311,7 @@ body {
 
 .command-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .command-name{
@@ -296,9 +326,17 @@ body {
 
 .footer{
     background-color:var(--footer-background); 
+    max-width: 1600px;
 }
 
+.footer-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .footer-logo {
+    margin-bottom: 20px;
+    display: block;
+
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
@@ -311,6 +349,9 @@ body {
     color:var(--main-title-color);
     }
 
+    .footer-item:not(:last-child){
+    margin-bottom: 9px;
+    }
 .footer-adress{
     font-style: normal;
     font-weight: 400;
@@ -341,12 +382,23 @@ body {
 
 /* -------------------PORFOLIO BTN-------------------------- */
 
+.porfolio-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .porfolio-list{
     display: flex;
     justify-content: center;
 }
 
+.porfolio-item:not(:last-child){
+    margin-right: 8px;
+    }
 .porfolio-btn{
+    margin-bottom: 50px;
+    padding: 6px 22px;
+    border-radius: 4px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
