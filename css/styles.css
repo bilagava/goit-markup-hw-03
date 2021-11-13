@@ -470,7 +470,7 @@ img{
 
     font-weight: 700;
     font-size: 18px;
-    line-height: 2.0px;
+    line-height: 2.0;
     letter-spacing: 0.06em;
     color:var(--second-title-color);
 }
