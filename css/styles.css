@@ -73,6 +73,8 @@ body {
 
 img{
     display: block;
+    max-width: 100%; 
+    height: auto;
 }
 
 .list {
@@ -93,10 +95,16 @@ img{
     /* outline: 1px solid tomato; */
 } 
 
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 /* ------------------- HEDER-------------------------- */
 
 .header{
+    border-bottom: 1px solid #ECECEC;
     background-color:var(--header-background)
+    
 }
 
 .heder-container{
@@ -185,9 +193,6 @@ img{
 .hero{
     background-color: var(--second-background);
     max-width: 1600px;
-}
-
-.hero-container{
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -198,6 +203,8 @@ img{
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    text-transform: uppercase;
+    
 
     font-weight: 900;
     font-size: 44px;
@@ -238,11 +245,6 @@ img{
     margin: -1px;
 }
 
-.differences-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .differences-list{
     display: flex;
     justify-content: center;
@@ -251,7 +253,9 @@ img{
 .differences-item:not(:last-child){
     margin-right: 30px;}
 
-.differences-title{  
+.differences-title{ 
+    text-transform: uppercase;
+    
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -270,9 +274,9 @@ img{
 
 /* -------------------WORK-------------------------- */
 
-.work-container{
-    padding-bottom: 94px;
-    }
+.work{
+    padding-top: 0px;
+}
 .work-title{
         text-align: center;
         margin-bottom: 50px;
@@ -298,12 +302,8 @@ img{
 
 .command{
     background-color: var(--third-background);
-}
+    }
 
-.command-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .command-title{
     text-align: center;
     margin-bottom: 50px;
@@ -348,12 +348,11 @@ img{
 .footer{
     background-color:var(--footer-background); 
     max-width: 1600px;
-}
 
-.footer-container{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer-logo {
     margin-bottom: 20px;
     display: block;
@@ -403,12 +402,7 @@ img{
 
 /* -------------------PORFOLIO-------------------------- */
 
-.porfolio-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-    }
-
-/* -------------------PORFOLIO BTN-------------------------- */
+/* -------- BTN----------- */
 
 .porfolio-list{
     display: flex;
@@ -438,7 +432,7 @@ img{
     background-color:var(--accent-color)
 }
 
-/* -------------------PROJECTS-------------------------- */
+/* ----PROJECTS--------- */
 
 .project-list{
     display: flex;
@@ -447,8 +441,8 @@ img{
 }
 
 .project-item{
+    border: 1px solid #EEEEEE;
     width: 370px;
-    padding-bottom: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
     /* flex-basis: calc(100% / 9 -30px);
@@ -463,9 +457,13 @@ img{
     margin-bottom: 0;   
 }
 
+.project-type{
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px
+}
 .project-title{
-    padding-left: 24px;
-    margin-top: 20px;
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -476,8 +474,6 @@ img{
 }
 
 .project-after-title{
-    padding-left: 24px;
-    
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
